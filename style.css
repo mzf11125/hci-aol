@@ -41,7 +41,7 @@ button {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #444;
+  background-color: rgb(44, 73, 83);
   color: white;
   border: none;
   cursor: pointer;
