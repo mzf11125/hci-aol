@@ -66,3 +66,35 @@ button {
   object-fit: cover;
   opacity: 80%;
 }
+
+.footer {
+  background-color: #f0f0f0; /* light gray background */
+  padding: 20px; /* add some padding to make it look nicer */
+  text-align: center; /* center the text */
+  clear: both; /* make sure the footer clears any floats */
+}
+
+.footer p {
+  margin-bottom: 10px; /* add some space between paragraphs */
+}
+
+.footer a {
+  text-decoration: none; /* remove underline from links */
+  color: #337ab7; /* blue color for links */
+}
+
+.footer a:hover {
+  color: #23527c; /* darker blue on hover */
+}
+
+.footer .social-links {
+  font-size: 18px; /* make the social links a bit larger */
+}
+
+.footer .social-links a {
+  margin: 0 10px; /* add some space between social links */
+}
+
+.footer .contact-info {
+  font-size: 16px; /* make the contact info a bit smaller */
+}
