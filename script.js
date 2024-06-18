@@ -11,5 +11,5 @@ document.getElementById("used-button").addEventListener("click", () => {
 });
 
 document.getElementById("new-button").addEventListener("click", () => {
-  window.location.href = "pages/new_cars.html";
+  window.location.href = "pages/shop.html";
 });

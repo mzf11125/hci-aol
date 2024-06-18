@@ -2,7 +2,7 @@
 
 /* Set the background color, font family, text color, and spacing for the body */
 body {
-  background-color: rgb(72, 96, 72);
+  background-color: whitesmoke;
   font-family: "Inria Serif", serif;
   color: white;
   margin: 0;
@@ -21,6 +21,33 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(44, 73, 83);
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: grey;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 /* Style the navbar */
 #navbar {
   background-color: rgb(44, 73, 83);
@@ -71,12 +98,18 @@ button {
 
 /* Style the sections */
 section {
+  font-weight: bold;
   position: relative;
-  height: calc(100vh - 70px); /* Adjust height to fit below the navbar */
-  background-image: url("/img/opumo-7-25-1200x578 (1).jpg");
   background-size: cover;
   background-position: center;
   opacity: 80%;
+}
+
+section h2 {
+  background-color: grey;
+}
+section p {
+  background-color: grey;
 }
 
 /* Style the image button */

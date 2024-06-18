@@ -1,0 +1,174 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #2f4953;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar {
+  background-color: rgb(44, 73, 83);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center the navbar content */
+}
+
+#navbar a:hover {
+  font-weight: bold;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 10px;
+  gap: 20px;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.register-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #2f4953;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #2a4348;
+}
+
+footer {
+  background-color: #2f4953; /* light gray background */
+}
+.footer {
+  background-color: rgb(44, 73, 83); /* light gray background */
+  color: white;
+  padding: 20px; /* add some paddingf to make it look nicer */
+  text-align: center; /* center the text */
+  clear: both; /* make sure the footer clears any floats */
+}
+
+.footer p {
+  margin-bottom: 10px; /* add some space between paragraphs */
+}
+
+.footer a {
+  text-decoration: none; /* remove underline from links */
+  color: white; /* blue color for links */
+}
+
+.footer a:hover {
+  color: lightblue; /* darker blue on hover */
+}
+
+.footer .social-links {
+  font-size: 18px; /* make the social links a bit larger */
+}
+
+.footer .social-links a {
+  margin: 0 10px; /* add some space between social links */
+}
+
+.footer .contact-info {
+  font-size: 16px; /* make the contact info a bit smaller */
+}
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+  /* Responsive styles */
+
+  /* Change the layout of the navbar for smaller screens */
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust the margin of list items in the navbar for smaller screens */
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  /* Adjust the position of the button for smaller screens */
+  .button {
+    top: 50%;
+  }
+  .register-form {
+    max-width: 100%;
+    margin: 20px;
+  }
+}

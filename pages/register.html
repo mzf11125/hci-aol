@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../pages/styling/register.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="../index.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="shop.html" target="_blank">Shop</a></li>
+        <li><a href="showroom.html" target="_blank">Showroom</a></li>
+        <li><a href="register.html" target="_blank">Account</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="register-form">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <span class="error" id="usernameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <span class="error" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <span class="error" id="passwordError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+            <span class="error" id="confirmPasswordError"></span>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="checkbox"
+              id="termsCheckbox"
+              name="termsCheckbox"
+              required
+            />
+            <label for="termsCheckbox">I agree to the terms and services</label>
+            <span class="error" id="termsCheckboxError"></span>
+          </div>
+
+          <button type="submit" onclick="animateSubmit()">Register</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer">
+        <p>&copy; 2023 Diamondcut Motor. All rights reserved.</p>
+        <p class="social-links">
+          Follow us on:
+          <a href="https://www.facebook.com/DiamondcutMotor" target="_blank"
+            >Facebook</a
+          >
+          |
+          <a href="https://www.instagram.com/DiamondcutMotor" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://www.twitter.com/DiamondcutMotor" target="_blank"
+            >Twitter</a
+          >
+        </p>
+        <p class="contact-info">
+          Contact us:
+          <a href="mailto:contact@diamondcutmotor.com"
+            >contact@diamondcutmotor.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="../js/register.js"></script>
+  </body>
+</html>

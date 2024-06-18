@@ -1,0 +1,257 @@
+body {
+  background-color: white; /* Set the background color of the body */
+  font-family: "Inria Serif", serif; /* Set the font family for the body */
+  color: black; /* Set the text color */
+  margin: 0; /* Remove the default margin */
+  padding: 0; /* Remove the default padding */
+  line-height: 1.6; /* Set the line height */
+}
+
+header {
+  background-color: #2f4953; /* Set the background color of the header */
+  color: white; /* Set the text color */
+  padding: 20px; /* Add padding to the header */
+  text-align: center; /* Center align the text */
+}
+
+ul {
+  list-style: none; /* Remove the default bullet points from unordered lists */
+}
+
+a {
+  color: white; /* Set the color of links */
+  text-decoration: none; /* Remove the underline from links */
+}
+
+h1 {
+  text-align: center; /* Center align the heading */
+  font-family: "Inria Serif", serif; /* Set the font family for the heading */
+  font-size: 3rem; /* Set the font size for the heading */
+  color: #2f4953; /* Set the text color */
+  margin-top: 2rem; /* Add margin to the top of the heading */
+  margin-bottom: 2rem; /* Add margin to the bottom of the heading */
+}
+
+#navbar {
+  background-color: rgb(
+    44,
+    73,
+    83
+  ); /* Set the background color of the navbar */
+  color: white; /* Set the text color */
+  padding: 10px; /* Add padding to the navbar */
+  display: flex; /* Use flexbox for the navbar */
+  justify-content: center; /* Center align the navbar content horizontally */
+  align-items: center; /* Center align the navbar content vertically */
+}
+
+#navbar a:hover {
+  font-weight: bold; /* Make the font weight bold on hover */
+}
+
+#navbar ul {
+  display: flex; /* Use flexbox for the navbar list */
+  padding: 0; /* Remove the default padding */
+  margin: 10px; /* Add margin to the navbar list */
+  gap: 20px; /* Add gap between navbar list items */
+}
+
+.navbar li {
+  list-style: none; /* Remove the default bullet points from list items */
+  display: inline; /* Display list items inline */
+  margin: 0 20px; /* Add margin to the list items */
+}
+
+.car-grid {
+  display: grid; /* Use CSS grid for the car grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Set the grid columns to auto-fit with a minimum width of 300px */
+  grid-gap: 20px; /* Add gap between grid items */
+  padding: 20px; /* Add padding to the car grid */
+  margin-left: 3%; /* Add margin to the left of the car grid */
+}
+
+.car-card {
+  border: 1px solid #ccc; /* Add border to the car card */
+  border-radius: 5px; /* Add border radius to the car card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow to the car card */
+  overflow: hidden; /* Hide any overflowing content */
+  background-color: #fff; /* Set the background color of the car card */
+}
+
+.car-card img {
+  width: 100%; /* Set the width of the car card image to 100% */
+  height: 200px; /* Set the height of the car card image */
+  object-fit: cover; /* Scale the image to cover the container */
+}
+
+.car-card h2 {
+  margin: 10px; /* Add margin to the heading */
+  font-size: 18px; /* Set the font size for the heading */
+  text-align: center; /* Center align the heading */
+}
+
+.car-card p {
+  margin: 10px; /* Add margin to the paragraph */
+  color: #666; /* Set the text color */
+}
+
+.car-card ul {
+  margin: 10px; /* Add margin to the unordered list */
+  margin-left: 10%; /* Add margin to the left of the unordered list */
+  color: #666; /* Set the text color */
+}
+
+.car-card button {
+  display: block; /* Display the button as a block element */
+  margin: 10px; /* Add margin to the button */
+  margin-left: 30%; /* Add margin to the left of the button */
+  padding: 8px 16px; /* Add padding to the button */
+  background-color: #2f4953; /* Set the background color of the button */
+  color: white; /* Set the text color */
+  border: none; /* Remove the button border */
+  border-radius: 4px; /* Add border radius to the button */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  text-align: center; /* Center align the button text */
+}
+
+.car-card button:hover {
+  background-color: #2a4348; /* Change the background color of the button on hover */
+}
+
+.footer {
+  background-color: rgb(
+    44,
+    73,
+    83
+  ); /* Set the background color of the footer */
+  color: white; /* Set the text color */
+  padding: 20px; /* Add padding to the footer */
+  text-align: center; /* Center align the text */
+  clear: both; /* Clear any floats */
+}
+
+.footer p {
+  margin-bottom: 10px; /* Add margin to the bottom of paragraphs */
+}
+
+.footer a {
+  text-decoration: none; /* Remove the underline from links */
+  color: white; /* Set the text color of links */
+}
+
+.footer a:hover {
+  color: lightblue; /* Change the text color of links on hover */
+}
+
+.footer .social-links {
+  font-size: 18px; /* Set the font size for social links */
+}
+
+.footer .social-links a {
+  margin: 0 10px; /* Add margin to the social links */
+}
+
+.footer .contact-info {
+  font-size: 16px; /* Set the font size for contact info */
+}
+
+.section-title {
+  display: flex; /* Use flexbox for the section title */
+  justify-content: center; /* Center align the section title horizontally */
+}
+
+.hero-section {
+  position: relative; /* Set the position of the hero section */
+  width: 100vw; /* Set the width of the hero section to 100% of the viewport width */
+  max-height: 100vh; /* Set the maximum height of the hero section to 100% of the viewport height */
+  overflow: hidden; /* Hide any overflowing content */
+  padding-top: 25%; /* Add padding to the top of the hero section */
+}
+
+.carousel {
+  position: absolute; /* Set the position of the carousel */
+  top: 0; /* Position the carousel at the top */
+  left: 0; /* Position the carousel at the left */
+  width: 100vw; /* Set the width of the carousel to 100% of the viewport width */
+  height: 100%; /* Set the height of the carousel to 100% */
+}
+
+.carousel-inner {
+  display: flex; /* Use flexbox for the carousel inner */
+  height: 100%; /* Set the height of the carousel inner to 100% */
+  transition: transform 0.5s ease; /* Add transition effect to the carousel inner */
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Set the flex properties of the carousel item */
+  display: flex; /* Use flexbox for the carousel item */
+  flex-direction: column; /* Set the flex direction to column */
+  justify-content: center; /* Center align the content vertically */
+  align-items: center; /* Center align the content horizontally */
+  text-align: center; /* Center align the text */
+}
+
+.carousel-item img {
+  max-width: 100%; /* Set the maximum width of the carousel item image to 100% */
+  width: 100%; /* Set the width of the carousel item image to 100% */
+  max-height: 400px; /* Set the maximum height of the carousel item image */
+  object-fit: cover; /* Scale the image to cover the container */
+  margin: 0 auto; /* Center align the image horizontally */
+  display: block; /* Remove any default inline spacing */
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute; /* Set the position of the carousel navigation buttons */
+  top: 50%; /* Position the buttons at the vertical center */
+  transform: translateY(-50%); /* Center align the buttons vertically */
+  font-size: 2rem; /* Set the font size for the buttons */
+  padding: 0.5rem; /* Add padding to the buttons */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Set the background color of the buttons */
+  color: white; /* Set the text color of the buttons */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+
+.carousel-prev {
+  left: 1rem; /* Position the previous button at the left */
+}
+
+.carousel-next {
+  right: 1rem; /* Position the next button at the right */
+}
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+  /* Responsive styles */
+
+  /* Change the layout of the navbar for smaller screens */
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust the margin of list items in the navbar for smaller screens */
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  /* Adjust the position of the button for smaller screens */
+  .button {
+    top: 50%;
+  }
+  .car-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Set the grid columns to auto-fit with a minimum width of 200px */
+  }
+}
